@@ -4,26 +4,12 @@ import Link from "next/link";
 import ProductHeader from "../../components/server/ProductHeader";
 import ShopCategory from "../../components/server/ShopCategory";
 import Product from "../../components/server/Product";
+import { products } from "../../products";
 
 export default function HomePage() {
   return (
     <main className={styles.main}>
       <h1>Homepage</h1>
-      <ProductHeader>Check our latest added items!</ProductHeader>
-      <div className={styles.productContainer}>
-        <Product></Product>
-        <Product></Product>
-        <Product></Product>
-        <Product></Product>
-        <Product></Product>
-        <Product></Product>
-        <Product></Product>
-        <Product></Product>
-      </div>
-      <ProductHeader>Check out time limited discounted items!</ProductHeader>
-      <div className={styles.productContainer}>
-        <Product></Product>
-      </div>
       <ProductHeader>Check out product by categories!</ProductHeader>
       <div className={styles.categoryContainer}>
         <ShopCategory
@@ -38,6 +24,32 @@ export default function HomePage() {
         >
           Stickers
         </ShopCategory>
+      </div>
+      <ProductHeader>Check our latest added items!</ProductHeader>
+      <div className={styles.productContainer}>
+        {products.map((p) => (
+          <Product
+            key={p.productID}
+            price={p.productPrice}
+            isDiscounted={p.discountRate > 0}
+          >
+            {p.productName}
+          </Product>
+        ))}
+      </div>
+      <ProductHeader>Check out time limited discounted items!</ProductHeader>
+      <div className={styles.productContainer}>
+        {products
+          .filter((p) => p.discountRate > 0)
+          .map((p) => (
+            <Product
+              key={p.productID}
+              price={p.productPrice}
+              isDiscounted={true}
+            >
+              {p.productName}
+            </Product>
+          ))}
       </div>
       <footer>{/* Contact footer */}</footer>
     </main>

@@ -3,11 +3,11 @@
   justify-content: center;
   align-items: center;
   background: linear-gradient(
-    135deg,
-    rgba(6, 147, 227, 1) 0%,
-    rgb(155, 81, 224) 100%
+    307deg,
+    rgb(235 115 153) 0%,
+    rgb(167 107 223) 100%
   );
-  min-height: 10rem;
+  min-height: 6rem;
 }
 
 .text {

@@ -10,7 +10,7 @@ export default function Navbar() {
         <p className={styles.logoDescText}>Digital Stickers and Patterns</p>
       </div>
       <div className={styles.linksContainer}>
-        <Link href="" className={styles.navLink}>
+        <Link href="/products" className={styles.navLink}>
           Shop
         </Link>
         <Link href="" className={styles.navLink}>
