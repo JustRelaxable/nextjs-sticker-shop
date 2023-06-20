@@ -1,0 +1,12 @@
+.button {
+  background-color: var(--button-primary);
+  font-size: 1rem;
+  color: var(--text-white);
+  font-weight: 600;
+  text-decoration: none;
+  padding: 1rem 1.5rem;
+}
+
+.button:hover {
+  text-decoration: underline;
+}

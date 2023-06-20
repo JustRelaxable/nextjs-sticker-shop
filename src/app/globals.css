@@ -1,5 +1,15 @@
+:root {
+  --text-white: rgb(245, 239, 224);
+  --text-red: rgb(205, 38, 83);
+  --button-primary: #cd2653;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+}
+
+h1 {
+  font-size: 5rem;
 }

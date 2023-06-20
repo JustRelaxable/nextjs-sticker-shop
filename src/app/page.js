@@ -1,32 +1,42 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import Link from "next/link";
+import ProductHeader from "../../components/server/ProductHeader";
+import ShopCategory from "../../components/server/ShopCategory";
+import Product from "../../components/server/Product";
 
 export default function HomePage() {
   return (
-    <main>
+    <main className={styles.main}>
       <h1>Homepage</h1>
-      <div>
-        <p>Check our latest added items!</p>
+      <ProductHeader>Check our latest added items!</ProductHeader>
+      <div className={styles.productContainer}>
+        <Product></Product>
+        <Product></Product>
+        <Product></Product>
+        <Product></Product>
+        <Product></Product>
+        <Product></Product>
+        <Product></Product>
+        <Product></Product>
       </div>
-      <div>{/* Product div */}</div>
       <div>{/* Three dot */}</div>
-      <div>
-        <p>Check out time limited discounted items!</p>
-      </div>
-      <div>{/* Product div */}</div>
-      <div>
-        <p>Check out product by categories!</p>
-      </div>
-      <div>
-        <div>
-          <h2>Stickers</h2>
-          <Link href="/stickers">Go to Stickers Page!</Link>
-        </div>
-        <div>
-          <h2>Patterns</h2>
-          <Link href="/stickers">Go to Patterns Page!</Link>
-        </div>
+      <ProductHeader>Check out time limited discounted items!</ProductHeader>
+      <div className={styles.productContainer}>{/* Product div */}</div>
+      <ProductHeader>Check out product by categories!</ProductHeader>
+      <div className={styles.categoryContainer}>
+        <ShopCategory
+          categoryBackground="./flower-pattern.webp"
+          href="/patterns"
+        >
+          Patterns
+        </ShopCategory>
+        <ShopCategory
+          categoryBackground="./food-stickers.webp"
+          href="/stickers"
+        >
+          Stickers
+        </ShopCategory>
       </div>
       <footer>{/* Contact footer */}</footer>
     </main>
