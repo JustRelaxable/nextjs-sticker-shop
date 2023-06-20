@@ -20,9 +20,10 @@ export default function HomePage() {
         <Product></Product>
         <Product></Product>
       </div>
-      <div>{/* Three dot */}</div>
       <ProductHeader>Check out time limited discounted items!</ProductHeader>
-      <div className={styles.productContainer}>{/* Product div */}</div>
+      <div className={styles.productContainer}>
+        <Product></Product>
+      </div>
       <ProductHeader>Check out product by categories!</ProductHeader>
       <div className={styles.categoryContainer}>
         <ShopCategory

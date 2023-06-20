@@ -1,0 +1,67 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.2rem 2rem;
+  border-bottom: 1px solid rgb(109, 109, 109);
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.linksContainer {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.searchContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: rgb(109, 109, 109);
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+
+.searchIcon {
+  width: 25px;
+  height: 25px;
+}
+
+.logoText {
+  color: black;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.logoDescText {
+  color: rgb(109, 109, 109);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.homeLink {
+  text-decoration: none;
+}
+
+.homeLink:hover {
+  text-decoration: underline;
+  text-decoration-color: black;
+}
+
+.navLink {
+  color: var(--text-red);
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.navLink:hover {
+  text-decoration: underline;
+}
