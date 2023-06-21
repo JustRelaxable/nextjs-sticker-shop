@@ -15,7 +15,7 @@ export default function Navbar() {
           Shop
         </Link>
         <div className={styles.cartContainer}>
-          <Link href="" className={styles.navLink}>
+          <Link href="/cart" className={styles.navLink}>
             Cart
           </Link>
           <CartNumberDisplayer></CartNumberDisplayer>

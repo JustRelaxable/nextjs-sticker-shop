@@ -1,4 +1,5 @@
 import PrimaryButton from "../../../../components/client/PrimaryButton";
+import QuantityAddToCart from "../../../../components/client/QuantityAddToCart";
 import { products, getProduct } from "../../../../products";
 import styles from "./page.module.css";
 export default function ProductPage({ params }) {
@@ -15,10 +16,9 @@ export default function ProductPage({ params }) {
         <div className={styles.productDetailsContainer}>
           <h1>{selectedProduct.productName}</h1>
           <p>{selectedProduct.productPrice}$</p>
-          <div className={styles.quantityContainer}>
-            <input type="number" value={1}></input>
-            <PrimaryButton>Add to Cart</PrimaryButton>
-          </div>
+          <QuantityAddToCart
+            productID={selectedProduct.productID}
+          ></QuantityAddToCart>
         </div>
       </div>
     </main>

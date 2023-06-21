@@ -1,0 +1,17 @@
+.container {
+  text-align: center;
+  display: flex;
+  gap: 25px;
+  flex-direction: column;
+}
+
+.rightGrid {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
+}
+
+.rightGrid > :first-child {
+  grid-row: 1;
+  grid-column: 2;
+}

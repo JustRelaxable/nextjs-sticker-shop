@@ -31,7 +31,7 @@ const products = [
     productPrice: 2.99,
     productCategory: productCategories.Sticker,
     discountRate: 0,
-    productThumbnailPath: "",
+    productThumbnailPath: "/product-thumbnail.webp",
     productImages: [],
   },
   {

@@ -5,13 +5,7 @@ import styles from "./Product.module.css";
 import PrimaryButton from "../client/PrimaryButton";
 import { useCartContext } from "../client/CartContext";
 export default function Product({ children, price, isDiscounted, id }) {
-  const [cartContent, setCartContent] = useCartContext();
-
-  function addToCart() {
-    setCartContent((c) => {
-      return [...c, { productID: id, quantity: 1 }];
-    });
-  }
+  const [cartContent, setCartContent, addToCart] = useCartContext();
 
   return (
     <div className={styles.container}>
@@ -24,7 +18,13 @@ export default function Product({ children, price, isDiscounted, id }) {
         <h3 className={styles.productName}>{children}</h3>
       </Link>
       <p className={styles.productPrice}>{price}$</p>
-      <PrimaryButton onClick={addToCart}>Add to Card</PrimaryButton>
+      <PrimaryButton
+        onClick={() => {
+          addToCart(id, 1);
+        }}
+      >
+        Add to Card
+      </PrimaryButton>
     </div>
   );
 }
