@@ -7,14 +7,7 @@
 }
 
 .productContainer {
+  width: 100%;
   display: flex;
   gap: 5%;
-}
-
-.productImageContainer {
-  width: 100%;
-}
-
-.productShowcaseImage {
-  width: 100%;
 }
