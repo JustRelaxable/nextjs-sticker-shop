@@ -11,7 +11,7 @@ export default function Navbar() {
         <p className={styles.logoDescText}>Digital Stickers and Patterns</p>
       </div>
       <div className={styles.linksContainer}>
-        <Link href="/products" className={styles.navLink}>
+        <Link href="/shop" className={styles.navLink}>
           Shop
         </Link>
         <div className={styles.cartContainer}>
