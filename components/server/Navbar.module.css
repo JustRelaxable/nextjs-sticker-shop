@@ -70,3 +70,9 @@
 .cartContainer {
   position: relative;
 }
+
+@media screen and (max-width: 822px) {
+  .logoDescText {
+    display: none;
+  }
+}

@@ -34,3 +34,18 @@
   z-index: -1;
   background-color: rgba(0, 0, 0, 0.5);
 }
+
+@media screen and (max-width: 1225px) {
+  .container {
+    min-height: 16rem;
+  }
+}
+
+@media screen and (max-width: 1060px) {
+  .container {
+    min-height: 11rem;
+  }
+  .header {
+    font-size: 2rem;
+  }
+}

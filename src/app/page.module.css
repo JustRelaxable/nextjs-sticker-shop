@@ -27,3 +27,15 @@
   font-weight: 700;
   font-size: 2rem;
 }
+
+@media screen and (max-width: 1225px) {
+  .productContainer {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .productContainer {
+    grid-template-columns: 1fr 1fr;
+  }
+}
