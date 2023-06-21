@@ -1,0 +1,25 @@
+.quantityContainer {
+  display: flex;
+  gap: 10px;
+}
+
+.productDetailsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+  gap: 20px;
+}
+
+.productContainer {
+  display: flex;
+  gap: 5%;
+}
+
+.productImageContainer {
+  width: 100%;
+}
+
+.productShowcaseImage {
+  width: 100%;
+}

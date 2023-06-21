@@ -1,3 +1,4 @@
+import CartNumberDisplayer from "../client/CartNumberDisplayer";
 import styles from "./Navbar.module.css";
 import Link from "next/link";
 export default function Navbar() {
@@ -13,9 +14,13 @@ export default function Navbar() {
         <Link href="/products" className={styles.navLink}>
           Shop
         </Link>
-        <Link href="" className={styles.navLink}>
-          Cart
-        </Link>
+        <div className={styles.cartContainer}>
+          <Link href="" className={styles.navLink}>
+            Cart
+          </Link>
+          <CartNumberDisplayer></CartNumberDisplayer>
+        </div>
+
         <div className={styles.searchContainer}>
           <svg
             xmlns="http://www.w3.org/2000/svg"

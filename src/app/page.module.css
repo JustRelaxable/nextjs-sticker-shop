@@ -4,8 +4,6 @@
   align-items: stretch;
   gap: 20px;
   text-align: center;
-  padding: 0 10rem;
-  padding-top: 40px;
 }
 
 .categoryContainer {
@@ -18,4 +16,14 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
   column-gap: 20px;
   row-gap: 30px;
+}
+
+.footerCategory {
+  width: 100%;
+  text-align: left;
+}
+
+.footerCategory > h2 {
+  font-weight: 700;
+  font-size: 2rem;
 }

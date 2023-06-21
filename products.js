@@ -21,7 +21,7 @@ const products = [
     productPrice: 2.99,
     productCategory: productCategories.Sticker,
     discountRate: 0,
-    productThumbnailPath: "",
+    productThumbnailPath: "/product-thumbnail.webp",
     productImages: [],
   },
   {
@@ -56,4 +56,9 @@ const products = [
   },
 ];
 
-export { products };
+function getProduct(id) {
+  const filteredProduct = products.find((p) => p.productID == id);
+  return filteredProduct;
+}
+
+export { products, getProduct };

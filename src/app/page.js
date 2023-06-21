@@ -30,6 +30,7 @@ export default function HomePage() {
         {products.map((p) => (
           <Product
             key={p.productID}
+            id={p.productID}
             price={p.productPrice}
             isDiscounted={p.discountRate > 0}
           >
@@ -44,6 +45,7 @@ export default function HomePage() {
           .map((p) => (
             <Product
               key={p.productID}
+              id={p.productID}
               price={p.productPrice}
               isDiscounted={true}
             >
@@ -51,7 +53,14 @@ export default function HomePage() {
             </Product>
           ))}
       </div>
-      <footer>{/* Contact footer */}</footer>
+      <div className={styles.categoryContainer}>
+        <div className={styles.footerCategory}>
+          <h2>Follow us on Social Media</h2>
+        </div>
+        <div className={styles.footerCategory}>
+          <h2>Contact Info</h2>
+        </div>
+      </div>
     </main>
   );
 }

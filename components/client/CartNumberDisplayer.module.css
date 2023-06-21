@@ -1,0 +1,11 @@
+#cartNumber {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  color: var(--text-white);
+  border-radius: 50%;
+  background-color: var(--text-red);
+  text-align: center;
+  left: 31px;
+  top: -14px;
+}
