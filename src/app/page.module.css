@@ -28,6 +28,40 @@
   font-size: 2rem;
 }
 
+.contactContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  align-items: flex-start;
+}
+
+.contactContainer > h2 {
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.contactDiv {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  font-size: 1.4rem;
+}
+
+.socialMediaLinksContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 18px;
+}
+
+.socialMediaIcon {
+  height: 2.7rem;
+}
+
+.instagramIcon {
+  fill: deeppink;
+}
+
 @media screen and (max-width: 1225px) {
   .productContainer {
     grid-template-columns: 1fr 1fr 1fr;
