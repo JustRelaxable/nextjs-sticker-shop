@@ -24,7 +24,7 @@
   }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 312px) {
   .productGrid {
     grid-template-columns: 1fr;
   }
