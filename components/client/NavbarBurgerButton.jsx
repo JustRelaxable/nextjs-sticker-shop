@@ -1,5 +1,5 @@
 "use client";
-import { useMobileMenuToggleContext } from "./MobileMenuToggleContext";
+import { useMobileMenuToggleContext } from "../../contexts/MobileMenuToggleContext";
 import styles from "./NavbarBurgerButton.module.css";
 export default function NavbarBurgerButton() {
   const [, setMobileMenuActive] = useMobileMenuToggleContext();

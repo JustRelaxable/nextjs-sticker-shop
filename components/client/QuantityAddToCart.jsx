@@ -2,7 +2,7 @@
 import styles from "./QuantityAddToCart.module.css";
 import PrimaryButton from "./PrimaryButton";
 import { useState } from "react";
-import { useCartContext } from "./CartContext";
+import { useCartContext } from "../../contexts/CartContext";
 
 export default function QuantityAddToCart({ productID }) {
   const [quantity, setQuantity] = useState(1);

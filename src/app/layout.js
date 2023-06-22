@@ -4,9 +4,9 @@ import Navbar from "../../components/server/Navbar";
 import Footer from "../../components/server/Footer";
 import PagePadding from "../../components/server/PagePadding";
 import PageSizer from "../../components/server/PageSizer";
-import CartContext from "../../components/client/CartContext";
+import CartContext from "../../contexts/CartContext";
 import MobileMenu from "../../components/client/MobileMenu";
-import MobileMenuToggleContext from "../../components/client/MobileMenuToggleContext";
+import MobileMenuToggleContext from "../../contexts/MobileMenuToggleContext";
 
 const inter = Inter({ subsets: ["latin"] });
 

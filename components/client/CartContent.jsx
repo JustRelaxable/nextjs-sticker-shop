@@ -1,6 +1,6 @@
 "use client";
 import styles from "./CartContent.module.css";
-import { useCartContext } from "./CartContext";
+import { useCartContext } from "../../contexts/CartContext";
 import { products, getProduct } from "../../products";
 import PrimaryButton from "./PrimaryButton";
 import Image from "next/image";

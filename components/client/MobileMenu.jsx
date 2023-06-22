@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import styles from "./MobileMenu.module.css";
-import { useMobileMenuToggleContext } from "./MobileMenuToggleContext";
+import { useMobileMenuToggleContext } from "../../contexts/MobileMenuToggleContext";
 export default function MobileMenu() {
   const [mobileMenuActive, setMobileMenuActive] = useMobileMenuToggleContext();
   function closeMobileMenu() {

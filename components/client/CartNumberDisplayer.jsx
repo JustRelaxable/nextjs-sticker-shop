@@ -1,5 +1,5 @@
 "use client";
-import { useCartContext } from "./CartContext";
+import { useCartContext } from "../../contexts/CartContext";
 import styles from "./CartNumberDisplayer.module.css";
 export default function CartNumberDisplayer() {
   const [cartContent, setCartContent] = useCartContext();

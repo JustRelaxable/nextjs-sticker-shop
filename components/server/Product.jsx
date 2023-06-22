@@ -3,7 +3,7 @@ import Link from "next/link";
 import LinkPrimary from "./LinkPrimary";
 import styles from "./Product.module.css";
 import PrimaryButton from "../client/PrimaryButton";
-import { useCartContext } from "../client/CartContext";
+import { useCartContext } from "../../contexts/CartContext";
 import { products, getProduct } from "../../products";
 import Image from "next/image";
 export default function Product({ children, price, isDiscounted, id }) {
