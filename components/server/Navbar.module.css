@@ -76,18 +76,13 @@
   text-align: center;
 }
 
-.menuIcon {
-  width: auto;
-  height: 2rem;
-}
-
 @media screen and (max-width: 822px) {
   .logoDescText {
     display: none;
   }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 518px) {
   .burgerMenu {
     display: block;
   }

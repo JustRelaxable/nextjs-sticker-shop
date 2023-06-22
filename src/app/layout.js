@@ -5,6 +5,8 @@ import Footer from "../../components/server/Footer";
 import PagePadding from "../../components/server/PagePadding";
 import PageSizer from "../../components/server/PageSizer";
 import CartContext from "../../components/client/CartContext";
+import MobileMenu from "../../components/client/MobileMenu";
+import MobileMenuToggleContext from "../../components/client/MobileMenuToggleContext";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,15 +19,18 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <PageSizer>
-          <CartContext>
-            <Navbar></Navbar>
-            <PagePadding>
-              {children}
-              <Footer></Footer>
-            </PagePadding>
-          </CartContext>
-        </PageSizer>
+        <MobileMenuToggleContext>
+          <PageSizer>
+            <CartContext>
+              <Navbar></Navbar>
+              <PagePadding>
+                {children}
+                <Footer></Footer>
+              </PagePadding>
+            </CartContext>
+          </PageSizer>
+          <MobileMenu></MobileMenu>
+        </MobileMenuToggleContext>
       </body>
     </html>
   );
