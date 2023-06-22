@@ -13,15 +13,12 @@ export default function HomePage() {
       <ProductHeader>Check out product by categories!</ProductHeader>
       <div className={styles.categoryContainer}>
         <ShopCategory
-          categoryBackground="./flower-pattern.webp"
+          categoryBackground="/flower-pattern.webp"
           href="/patterns"
         >
           Patterns
         </ShopCategory>
-        <ShopCategory
-          categoryBackground="./food-stickers.webp"
-          href="/stickers"
-        >
+        <ShopCategory categoryBackground="/food-stickers.webp" href="/stickers">
           Stickers
         </ShopCategory>
       </div>
