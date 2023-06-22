@@ -36,6 +36,7 @@ export default function Navbar() {
       </div>
       <div className={styles.burgerMenu}>
         <NavbarBurgerButton></NavbarBurgerButton>
+        <CartNumberDisplayer></CartNumberDisplayer>
       </div>
     </div>
   );
