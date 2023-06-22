@@ -1,12 +1,15 @@
 "use client";
-import { createContext, useContext, useState } from "react";
+import { createContext, useContext, useEffect, useState } from "react";
 
 const context = createContext();
 
 export default function CartContext({ children }) {
-  const [cartContent, setCartContent] = useState(
-    JSON.parse(localStorage.getItem("cartProducts")) || []
-  );
+  const [cartContent, setCartContent] = useState([]);
+
+  useEffect(() => {
+    setCartContent(JSON.parse(localStorage.getItem("cartProducts")) || []);
+  }, []);
+
   function addToCart(productID, quantity) {
     setCartContent((c) => {
       let changedEntry = false;
