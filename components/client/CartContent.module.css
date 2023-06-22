@@ -1,7 +1,7 @@
 .tableContainer {
   text-align: left;
   margin: 0 auto;
-  min-width: 60rem;
+  min-width: 100%;
   resize: both;
   border-collapse: collapse;
 }
@@ -37,4 +37,32 @@
 .removeButton:hover {
   color: var(--text-white);
   background-color: var(--text-red);
+}
+
+.mobileHeader {
+  display: none;
+}
+
+@media screen and (max-width: 680px) {
+  .mobileHeader {
+    display: block;
+  }
+
+  .productSection {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .dataContainer > td {
+    display: block;
+  }
+
+  .tableContainer > thead {
+    display: none;
+  }
+
+  .removeButtonTD {
+    float: right;
+  }
 }

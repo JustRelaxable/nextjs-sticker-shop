@@ -22,7 +22,7 @@ export default function CartContent() {
           const selectedProduct = getProduct(x.productID);
           return (
             <tr key={x.productID} className={styles.dataContainer}>
-              <td>
+              <td className={styles.removeButtonTD}>
                 <button
                   className={styles.removeButton}
                   onClick={() => {
@@ -38,10 +38,30 @@ export default function CartContent() {
                   className={styles.tableProductThumbnail}
                 ></img>
               </td>
-              <td>{selectedProduct.productName}</td>
-              <td>{selectedProduct.productPrice}$</td>
-              <td>{x.quantity}</td>
-              <td>{x.quantity * selectedProduct.productPrice}$</td>
+              <td>
+                <div className={styles.productSection}>
+                  <p className={styles.mobileHeader}>Product:</p>
+                  <p>{selectedProduct.productName}</p>
+                </div>
+              </td>
+              <td>
+                <div className={styles.productSection}>
+                  <p className={styles.mobileHeader}>Price:</p>
+                  <p>{selectedProduct.productPrice}</p>
+                </div>
+              </td>
+              <td>
+                <div className={styles.productSection}>
+                  <p className={styles.mobileHeader}>Quantity:</p>
+                  <p>{x.quantity}</p>
+                </div>
+              </td>
+              <td>
+                <div className={styles.productSection}>
+                  <p className={styles.mobileHeader}>Subtotal:</p>
+                  <p>{x.quantity * selectedProduct.productPrice}</p>
+                </div>
+              </td>
             </tr>
           );
         })}
