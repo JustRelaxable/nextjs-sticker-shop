@@ -11,3 +11,22 @@
   display: flex;
   gap: 5%;
 }
+
+@media screen and (max-width: 1225px) {
+  .productDetailsContainer > h1 {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (max-width: 785px) {
+  .productDetailsContainer > h1 {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .productContainer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
