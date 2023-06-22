@@ -11,3 +11,21 @@
   gap: 25px;
   row-gap: 30px;
 }
+
+@media screen and (max-width: 1366px) {
+  .productGrid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .productGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .productGrid {
+    grid-template-columns: 1fr;
+  }
+}
