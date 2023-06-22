@@ -99,7 +99,7 @@
   }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 313px) {
   .productContainer {
     grid-template-columns: 1fr;
   }
