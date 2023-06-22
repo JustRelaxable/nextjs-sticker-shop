@@ -27,7 +27,7 @@ export default function ProductImageDisplayer({ product }) {
             height={1430}
             style={{
               width: "100%",
-              height: "100%",
+              height: "auto",
               objectFit: "contain",
             }}
             onClick={() => {
