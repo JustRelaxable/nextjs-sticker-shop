@@ -3,6 +3,7 @@ import styles from "./CartContent.module.css";
 import { useCartContext } from "./CartContext";
 import { products, getProduct } from "../../products";
 import PrimaryButton from "./PrimaryButton";
+import Image from "next/image";
 export default function CartContent() {
   const [cartContent, setCartContent, , removeFromCart] = useCartContext();
   return (
@@ -33,10 +34,14 @@ export default function CartContent() {
                 </button>
               </td>
               <td>
-                <img
+                <Image
                   src={selectedProduct.productThumbnailPath}
                   className={styles.tableProductThumbnail}
-                ></img>
+                  alt="Product thumbnail"
+                  width={1892}
+                  height={1430}
+                  style={{ width: "100%", height: "auto" }}
+                ></Image>
               </td>
               <td>
                 <div className={styles.productSection}>
