@@ -3,6 +3,13 @@ import ProductImageDisplayer from "../../../../components/client/ProductImageDis
 import QuantityAddToCart from "../../../../components/client/QuantityAddToCart";
 import { products, getProduct } from "../../../../products";
 import styles from "./page.module.css";
+
+export async function generateStaticParams() {
+  return products.map((p) => {
+    id: p.productID;
+  });
+}
+
 export default function ProductPage({ params }) {
   const selectedProduct = getProduct(params.id);
   return (
