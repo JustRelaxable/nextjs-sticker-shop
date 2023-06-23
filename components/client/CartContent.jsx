@@ -19,7 +19,7 @@ export default function CartContent() {
         </tr>
       </thead>
       <tbody>
-        {cartContent.map((x) => {
+        {cartContent?.map((x) => {
           const selectedProduct = getProduct(x.productID);
           return (
             <tr key={x.productID} className={styles.dataContainer}>
