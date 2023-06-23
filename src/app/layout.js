@@ -7,6 +7,7 @@ import PageSizer from "../../components/server/PageSizer";
 import CartContext from "../../contexts/CartContext";
 import MobileMenu from "../../components/client/MobileMenu";
 import MobileMenuToggleContext from "../../contexts/MobileMenuToggleContext";
+import CartAddedNotification from "../../components/client/CartAddedNotification";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -26,6 +27,7 @@ export default function RootLayout({ children }) {
               <PagePadding>
                 {children}
                 <Footer></Footer>
+                <CartAddedNotification></CartAddedNotification>
               </PagePadding>
             </CartContext>
           </PageSizer>
